@@ -1,15 +1,25 @@
-li {
-    list-style-type: none;
+.li-style {
+    list-style: decimal;
     margin-top: 15px;
-    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
+    font-family: 'Unbounded', cursive;
     color: rgb(27, 13, 181);
+    padding-left: 50px;
 }
 
-#gradient {
-    linear-gradient: d
-}
 
 h6 {
     color: red;
     background-color: blue;
 }
+
+.finished {
+    text-decoration: line-through;
+}
+
+/* ul {
+    background: -webkit-linear-gradient(red, yellow, blue, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
