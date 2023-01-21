@@ -7,6 +7,10 @@
     padding-left: 50px;
 }
 
+h1 {
+    background-color: color2.value;
+}
+
 
 h6 {
     color: red;
@@ -15,6 +19,7 @@ h6 {
 
 .finished {
     text-decoration: line-through;
+    color: red;
 }
 
 /* ul {
