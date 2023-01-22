@@ -13,39 +13,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
     <link rel="stylesheet" href="style.css">
 </head> 
 <body id="gradient">
 
-    <div class="container">
-        
-        <div class="row my-5">
-            <div class="col-lg-4 col-md-4 col-4"></div>
-            
-            <div class="col-lg-4 col-md-4 col-4">
-                <div class="card" style="height:600px;">
-                    <h1 style="padding: 20px;  font-family: 'Fredoka One', cursive; text-align: center; color: white; background-color: crimson;">To Do List</h1>
-            
-                <div class="row mt-2">
-            
-                    <div class="col-lg-1 col-md-1 col-1">
-                    </div>
-            
-                    <div class="col-lg-10 col-md-10 col-10">
-                        <input id="input" type="text" placeholder="Enter task" style="width: 70%; height: 36px;">
-                        <button id="add" type="button" class="btn btn-dark">Add</button>
+    <div class="container-fluid">
 
-                    </div>
-                    
-                    <div class="col-lg-1 col-md-1 col-1">
-                    </div>
+                <h1 class="text-center bg p-3">TO DO</h1>
+                <h2 id="demo"></h2>
+
+        <div class="row" style=" margin-top: 20px;">   
+            
+            <div class="col-lg-1 col-md-1 col-1"></div>
+
+                <div class="col-lg-10 col-md-10 col-10">
+                    <input id="input" type="text" placeholder="Enter task" style="width: 70%; height: 50px;">
+                    <button id="add" type="button" class="btn btn-info button-66" style="height: 50px; margin-top: -5px; padding-bottom: 15px;">
+                        <i class="material-icons" style="color: azure;">&#xe145;</i>
+
+                    </button>
                 </div>
+
+                <div class="col-lg-1 col-md-1 col-1"></div>
+
+        </div>
+
+
+        
+        <div class="row my-3">
+            <div class="col-lg-6 col-md-6 col-6">
+                <div class="card" style="height:500px;">
+                    <h1 style="padding: 5%;  font-family: 'Fredoka One', cursive; text-align: center; color: white; background-color: rgb(14, 99, 189);">Incomplete</h1>
+            
             
                 
-                <div class="row" style="margin-top: 20px;">
+                <div class="row" style="margin-top: 2%;">
                     <div class="col-lg-1 col-md-1 col-1"></div>
                     <div class="col-lg-10 col-md-10 col-10">
-                        <ul>
+                        <ul id="incomplete">
+                            <!-- <li></li> -->
+                        </ul>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-1"></div>
+                </div>
+            
+                </div>
+
+            </div>
+            
+            <div class="col-lg-6 col-md-6 col-6">
+                <div class="card" style="height:500px;">
+                    <h1 style="padding: 5%;  font-family: 'Fredoka One', cursive; text-align: center; color: white; background-color: rgb(14, 99, 189);">Completed!!!</h1>            
+                
+                <div class="row" style="margin-top: 2%;">
+                    <div class="col-lg-1 col-md-1 col-1"></div>
+                    <div class="col-lg-10 col-md-10 col-10">
+                        <ul id="complete">
                             <!-- <li></li> -->
                         </ul>
                     </div>
@@ -55,7 +81,6 @@
                 </div>
             
             </div>
-            <div class="col-lg-4 col-md-4 col-4"></div>
 
         </div>
 
@@ -76,7 +101,10 @@
 
 </div>
 
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app.js">
+        const d = new Date();
+document.getElementById("demo").innerHTML = d;
+    </script>
 
 
     
